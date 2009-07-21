@@ -21,14 +21,23 @@
 
 ;;; Instructions:
 
-;; 1) Assumming that you have text expander setup
-;; 2) Download and add osx-plist.el to your emacs config
-;;    http://edward.oconnor.cx/elisp/osx-plist.el
-;; 3) Add this code below to your .emacs file (or include it like anything else)
-;; 4) Whenever you want to resync your updates run this: M-x textexpander-sync
+;; 1) Assuming that you have text expander setup
+;; 2) put this file and osx-plist.el  in your lisp dir
+;; 3) add to .emacs: 
+;;   (require 'textexpander-sync)
+;; 4) sync (and resync) via: M-x textexpander-sync
+;; 5) In textexpander settings set "Expand In" to 
+;;    "all applications excect" emacs
+;; 
+;; This code requires (osx-plist), which was probably included
+;; If not, download it here:
+;;   otherwise: http://edward.oconnor.cx/elisp/osx-plist.el
+;; 
 
 
 ;;; Code:
+
+(require 'osx-plist)
 
 (defvar textexpander-sync-file "~/Library/Application Support/TextExpander/Settings.textexpander"
   "Your text epander settings")
