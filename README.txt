@@ -14,6 +14,8 @@ available via abbrev-mode. Just download, require and run:
 You'll also want to run abbrev-mode most of the time, something like
 this should do it:
 
-  (setq default-abbrev-mode t))
+```lisp
+(setq default-abbrev-mode t)
+```
 
 By: Ted Roden <tedroden@gmail.com>
