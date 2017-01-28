@@ -1,4 +1,6 @@
 
+# I don't use mac os anymore (or text expander), so would be happy to have a new maintainer
+
 This elisp file will sync your TextExpander snippets with emacs so
 that you can use them in abbrev mode. 
 
